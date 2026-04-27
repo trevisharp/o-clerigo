@@ -1,0 +1,47 @@
+\documentclass[12pt,oneside]{book}
+
+\usepackage[a4paper,margin=3cm]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{parskip}
+
+\renewcommand{\LettrineFontHook}{\bfseries}
+\setcounter{DefaultLines}{2}
+\setlength{\DefaultFindent}{0.5em}
+\setlength{\DefaultNindent}{0em}
+
+\usepackage{ebgaramond}
+\usepackage[T1]{fontenc}
+
+\newcommand{\chapterfont}{\scshape}
+\setstretch{1.25}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\chapter}[display]
+  {\centering\chapterfont\Huge}
+  {\chaptername\ \thechapter}
+  {1em}
+  {\Huge}
+  [\vspace{1em}\rule{0.6\textwidth}{0.4pt}]
+
+\title{\Huge O Clérigo}
+\author{Leonardo Trevisan}
+\date{}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\mainmatter
+
+\input{chapters/cap1.tex}
+
+\backmatter
+
+\end{document}
